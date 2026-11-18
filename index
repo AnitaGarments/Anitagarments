@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anita Garments (अनीता गारमेंट्स) | Family Clothing Store in Nohar, Hanumangarh</title>
+  <meta name="description" content="Anita Garments by Smt. Anita Devi — Complete family clothing, sarees, kurtis, college wear, gents & kids garments near SNDB Government College, Bhadra Road, Nohar, Hanumangarh (335523)." />
+
+  <!-- Google Fonts: Playfair Display, Inter & Noto Sans Devanagari for crisp Hindi support -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cream: '#FDF8F2',
+            sand: '#F5ECE0',
+            maroon: {
+              DEFAULT: '#7C1D26',
+              dark: '#5C1219',
+              light: '#9E2A35'
+            },
+            mustard: {
+              DEFAULT: '#D49A2A',
+              light: '#E6B655',
+              dark: '#B37D17'
+            },
+            charcoal: '#241E1C',
+            whatsapp: '#1E9E52'
+          },
+          fontFamily: {
+            sans: ['Inter', 'Noto Sans Devanagari', 'sans-serif'],
+            serif: ['Playfair Display', 'Noto Sans Devanagari', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Font Awesome for crisp UI & WhatsApp icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body class="bg-cream text-charcoal font-sans antialiased selection:bg-maroon selection:text-white">
+
+  <!-- Top Info Strip -->
+  <div class="bg-maroon-dark text-amber-100 text-xs sm:text-sm py-2 px-4">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-1.5 text-center sm:text-left">
+      <p>
+        <i class="fa-solid fa-location-dot text-mustard-light mr-1.5"></i>
+        <span data-i18n="topAddress">Near SNDB Government College, Bhadra Road, Nohar, Dist. Hanumangarh (335523)</span>
+      </p>
+      <p class="font-medium">
+        <i class="fa-solid fa-clock text-mustard-light mr-1.5"></i>
+        <span data-i18n="topHours">Open All 7 Days: 9:30 AM – 8:30 PM</span> &nbsp;|&nbsp;
+        <a href="tel:+919660864821" class="underline hover:text-white">+91 96608 64821</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Sticky Header & Navigation -->
+  <header class="sticky top-0 z-40 bg-cream/95 backdrop-blur-md border-b border-amber-900/10 shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between gap-2">
+      <!-- Brand Logo / Title -->
+      <a href="#home" class="flex items-center gap-2.5 sm:gap-3 group shrink-0">
+        <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-maroon text-mustard-light flex items-center justify-center shadow-md border border-mustard/40 group-hover:scale-105 transition-transform">
+          <span class="font-serif font-bold text-xl sm:text-2xl">AG</span>
+        </div>
+        <div>
+          <span class="block font-serif font-bold text-base sm:text-xl text-maroon leading-tight" data-i18n="brandName">Anita Garments</span>
+          <span class="block text-[11px] sm:text-xs text-stone-600 font-medium tracking-wide" data-i18n="brandSub">अनीता गारमेंट्स &bull; Nohar</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden lg:flex items-center gap-6 text-sm font-medium text-stone-700">
+        <a href="#home" class="hover:text-maroon transition-colors" data-i18n="navHome">Home</a>
+        <a href="#collection" class="hover:text-maroon transition-colors" data-i18n="navCollection">Collections</a>
+        <a href="#founder" class="hover:text-maroon transition-colors" data-i18n="navFounder">Smt. Anita Devi</a>
+        <a href="#video-enquiry" class="hover:text-maroon transition-colors" data-i18n="navVideo">Video Call / Enquiry</a>
+        <a href="#visit" class="hover:text-maroon transition-colors" data-i18n="navVisit">Store &amp; Map</a>
+      </nav>
+
+      <!-- Header Action Buttons + Language Toggle -->
+      <div class="flex items-center gap-2 sm:gap-2.5">
+        <!-- Bilingual Toggle Button (English / हिन्दी) -->
+        <button id="lang-toggle" type="button" aria-label="Switch Language between English and Hindi"
+                class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-sand hover:bg-amber-200/70 border border-mustard/50 text-maroon font-bold text-xs sm:text-sm transition-colors shadow-sm">
+          <i class="fa-solid fa-language text-base"></i>
+          <span id="lang-toggle-label">हिन्दी</span>
+        </button>
+
+        <a href="tel:+919660864821" aria-label="Call Anita Garments"
+           class="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl border border-maroon/30 text-maroon font-semibold text-sm hover:bg-maroon hover:text-white transition-colors">
+          <i class="fa-solid fa-phone"></i>
+          <span data-i18n="btnCall">Call</span>
+        </a>
+
+        <a href="https://wa.me/919660864821?text=Namaste%20Anita%20ji%2C%20I%20visited%20the%20Anita%20Garments%20website%20and%20would%20like%20to%20enquire%20about%20clothes."
+           target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center gap-1.5 px-3 sm:px-4 py-2 rounded-xl bg-whatsapp hover:bg-emerald-700 text-white font-semibold text-xs sm:text-sm shadow-sm transition-all">
+          <i class="fa-brands fa-whatsapp text-base sm:text-lg"></i>
+          <span class="hidden sm:inline" data-i18n="btnWhatsapp">WhatsApp</span>
+        </a>
+
+        <!-- Mobile Menu Toggle -->
+        <button id="mobile-menu-btn" type="button" aria-label="Toggle Menu"
+                class="lg:hidden p-2 rounded-xl text-maroon hover:bg-sand transition-colors">
+          <i class="fa-solid fa-bars text-xl"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Navigation -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-cream border-t border-amber-900/10 px-4 py-3 space-y-1.5">
+      <a href="#home" class="mobile-nav-link block py-2 px-3 rounded-lg font-medium text-stone-800 hover:bg-sand" data-i18n="navHome">Home</a>
+      <a href="#collection" class="mobile-nav-link block py-2 px-3 rounded-lg font-medium text-stone-800 hover:bg-sand" data-i18n="navCollection">Collections</a>
+      <a href="#founder" class="mobile-nav-link block py-2 px-3 rounded-lg font-medium text-stone-800 hover:bg-sand" data-i18n="navFounder">About Smt. Anita Devi</a>
+      <a href="#video-enquiry" class="mobile-nav-link block py-2 px-3 rounded-lg font-medium text-stone-800 hover:bg-sand" data-i18n="navVideo">WhatsApp Video Call / Stock Check</a>
+      <a href="#visit" class="mobile-nav-link block py-2 px-3 rounded-lg font-medium text-stone-800 hover:bg-sand" data-i18n="navVisit">Store Address &amp; Map</a>
+    </div>
+  </header>
+
+  <!-- Hero Banner -->
+  <section id="home" class="relative overflow-hidden bg-gradient-to-br from-sand via-cream to-amber-50/70 border-b border-amber-900/10">
+    <div class="max-w-6xl mx-auto px-4 py-10 sm:py-16 lg:py-20 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+      <!-- Left Text Content -->
+      <div class="lg:col-span-7 space-y-5 text-center lg:text-left">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-maroon/10 text-maroon text-xs sm:text-sm font-semibold">
+          <i class="fa-solid fa-store text-mustard-dark"></i>
+          <span data-i18n="heroBadge">Complete Family Clothing &amp; Ethnic Store • Nohar (335523)</span>
+        </div>
+
+        <h1 class="font-serif text-3xl sm:text-5xl lg:text-[3.25rem] font-bold text-charcoal leading-tight" data-i18n="heroTitle">
+          Trusted Fabrics &amp; Honest Prices for Every Family in <span class="text-maroon">Nohar</span>
+        </h1>
+
+        <p class="text-stone-600 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed" data-i18n="heroDesc">
+          Welcome to <strong>Anita Garments (अनीता गारमेंट्स)</strong>, founded by <strong>Smt. Anita Devi</strong>. Located on <strong>Bhadra Road, near SNDB Government College</strong>, we bring handpicked Sarees, Jaipuri Kurti Sets, Rajasthani Odhanis, College Wear, Gents Shirts, and Kids' Festive Outfits starting at <strong>₹249 onwards</strong>.
+        </p>
+
+        <div class="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3.5">
+          <a href="#collection"
+             class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-maroon hover:bg-maroon-dark text-white font-semibold shadow-md transition-all">
+            <span data-i18n="heroBtnBrowse">Explore Latest Collection</span>
+            <i class="fa-solid fa-arrow-down text-sm"></i>
+          </a>
+          <a href="#video-enquiry"
+             class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-white hover:bg-emerald-50 text-whatsapp border-2 border-whatsapp font-semibold shadow-sm transition-all">
+            <i class="fa-solid fa-video text-lg"></i>
+            <span data-i18n="heroBtnVideo">Book WhatsApp Video Call</span>
+          </a>
+        </div>
+
+        <!-- Local Villages & Student Trust Strip -->
+        <div class="pt-3 flex flex-wrap items-center justify-center lg:justify-start gap-x-5 gap-y-2 text-xs sm:text-sm text-stone-600 font-medium">
+          <span class="flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-maroon"></i> <span data-i18n="trust1">Starting ₹249 Onwards</span></span>
+          <span class="flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-maroon"></i> <span data-i18n="trust2">SNDB College Student Friendly</span></span>
+          <span class="flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-maroon"></i> <span data-i18n="trust3">Serving Nohar &amp; Nearby Villages</span></span>
+        </div>
+      </div>
+
+      <!-- Right Hero Visual Card -->
+      <div class="lg:col-span-5">
+        <div class="relative rounded-2xl overflow-hidden shadow-xl border-4 border-white bg-sand">
+          <img
+            src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=900&q=80"
+            onerror="this.onerror=null;this.src='https://placehold.co/800x950/7C1D26/FDF8F2?text=Anita+Garments+Nohar';"
+            alt="Vibrant Indian Sarees and Family Ethnic Wear at Anita Garments Nohar"
+            class="w-full h-[350px] sm:h-[440px] object-cover"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-5 sm:p-6 text-white">
+            <div class="flex items-center gap-2 mb-2">
+              <span class="px-3 py-1 rounded-full bg-mustard text-charcoal font-bold text-xs" data-i18n="heroCardBadge">
+                Wedding &amp; Daily Wear Stock
+              </span>
+              <span class="px-2.5 py-1 rounded-full bg-white/20 backdrop-blur-sm text-white text-xs font-medium">
+                Bhadra Road, Nohar
+              </span>
+            </div>
+            <p class="font-serif text-xl sm:text-2xl font-bold" data-i18n="heroCardTitle">Anita Garments — अनीता गारमेंट्स</p>
+            <p class="text-xs sm:text-sm text-amber-100 mt-1" data-i18n="heroCardSub">Near SNDB Govt. College • Ladies, College Youth, Gents &amp; Kids</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Local Trust & Store Perks Strip (4 Genuine Nohar Shop Guarantees) -->
+  <section class="py-10 bg-white border-b border-amber-900/10">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <!-- Perk 1 -->
+        <div class="p-5 rounded-2xl bg-cream border border-amber-900/10 flex items-start gap-4">
+          <div class="w-11 h-11 rounded-xl bg-maroon/10 text-maroon flex items-center justify-center shrink-0 text-lg">
+            <i class="fa-solid fa-tag"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-charcoal text-base" data-i18n="perk1Title">Honest Fixed Prices</h3>
+            <p class="text-xs sm:text-sm text-stone-600 mt-1" data-i18n="perk1Desc">No bargaining stress—transparent, genuine rates for every customer from ₹249 onwards.</p>
+          </div>
+        </div>
+
+        <!-- Perk 2 -->
+        <div class="p-5 rounded-2xl bg-cream border border-amber-900/10 flex items-start gap-4">
+          <div class="w-11 h-11 rounded-xl bg-mustard/20 text-mustard-dark flex items-center justify-center shrink-0 text-lg">
+            <i class="fa-solid fa-rotate"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-charcoal text-base" data-i18n="perk2Title">7-Day Easy Size Exchange</h3>
+            <p class="text-xs sm:text-sm text-stone-600 mt-1" data-i18n="perk2Desc">Bought for family at home? Easily exchange sizes within 7 days with tag intact.</p>
+          </div>
+        </div>
+
+        <!-- Perk 3 -->
+        <div class="p-5 rounded-2xl bg-cream border border-amber-900/10 flex items-start gap-4">
+          <div class="w-11 h-11 rounded-xl bg-maroon/10 text-maroon flex items-center justify-center shrink-0 text-lg">
+            <i class="fa-solid fa-gift"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-charcoal text-base" data-i18n="perk3Title">Shaadi &amp; Family Discounts</h3>
+            <p class="text-xs sm:text-sm text-stone-600 mt-1" data-i18n="perk3Desc">Special bundle discounts on wedding sarees, gifting suits, and full-family shopping.</p>
+          </div>
+        </div>
+
+        <!-- Perk 4 -->
+        <div class="p-5 rounded-2xl bg-cream border border-amber-900/10 flex items-start gap-4">
+          <div class="w-11 h-11 rounded-xl bg-whatsapp/15 text-whatsapp flex items-center justify-center shrink-0 text-lg">
+            <i class="fa-solid fa-video"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-charcoal text-base" data-i18n="perk4Title">WhatsApp Video Selection</h3>
+            <p class="text-xs sm:text-sm text-stone-600 mt-1" data-i18n="perk4Desc">Coming from Bhukarka, Jasana, Phephana or Rawatsar? Preview stock on video call first!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Product Catalogue Section -->
+  <section id="collection" class="py-14 sm:py-20 bg-cream">
+    <div class="max-w-6xl mx-auto px-4">
+      <!-- Section Heading -->
+      <div class="text-center max-w-2xl mx-auto mb-8">
+        <span class="text-maroon font-semibold text-xs sm:text-sm uppercase tracking-wider" data-i18n="catSub">Handpicked For Nohar Families</span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-charcoal mt-1" data-i18n="catTitle">Our Clothing Collections</h2>
+        <p class="text-stone-600 text-sm sm:text-base mt-2" data-i18n="catDesc">
+          Realistic everyday &amp; festive prices starting at ₹249. Tap <strong>"Order / Ask on WhatsApp"</strong> on any garment to check colors &amp; sizes directly with Anita Devi.
+        </p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div id="filter-tabs" class="flex flex-wrap items-center justify-center gap-2 sm:gap-2.5 mb-10">
+        <button data-category="all" class="filter-btn active px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-maroon text-white shadow-sm" data-i18n="tabAll">
+          All Items
+        </button>
+        <button data-category="women" class="filter-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-white text-stone-700 border border-amber-900/15 hover:border-maroon" data-i18n="tabWomen">
+          Women's Ethnic &amp; Daily
+        </button>
+        <button data-category="college" class="filter-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-white text-stone-700 border border-amber-900/15 hover:border-maroon" data-i18n="tabCollege">
+          College &amp; Youth Essentials
+        </button>
+        <button data-category="men" class="filter-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-white text-stone-700 border border-amber-900/15 hover:border-maroon" data-i18n="tabMen">
+          Men's Wear
+        </button>
+        <button data-category="kids" class="filter-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-white text-stone-700 border border-amber-900/15 hover:border-maroon" data-i18n="tabKids">
+          Kids' Wear
+        </button>
+      </div>
+
+      <!-- Product Grid (Populated via JS for smooth bilingual & category filtering) -->
+      <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-7">
+        <!-- Cards rendered dynamically -->
+      </div>
+
+      <!-- Custom Enquiry Banner inside Catalogue -->
+      <div class="mt-12 rounded-2xl bg-sand border border-mustard/40 p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+        <div>
+          <h3 class="font-serif text-xl sm:text-2xl font-bold text-maroon" data-i18n="bulkTitle">Shopping for a Wedding (Shaadi) or College Fest?</h3>
+          <p class="text-stone-700 text-sm sm:text-base mt-1" data-i18n="bulkDesc">We keep fresh weekly arrivals in store! Message us on WhatsApp to receive live photos of new sarees, suits, jeans &amp; shirts.</p>
+        </div>
+        <a href="https://wa.me/919660864821?text=Namaste%20Anita%20ji%2C%20please%20share%20photos%20of%20your%20latest%20stock%20at%20Anita%20Garments%2C%20Nohar."
+           target="_blank" rel="noopener noreferrer"
+           class="shrink-0 inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-maroon hover:bg-maroon-dark text-white font-semibold shadow-md transition-all">
+          <i class="fa-brands fa-whatsapp text-lg"></i>
+          <span data-i18n="bulkBtn">Get Latest Stock Photos</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Authentic Founder Section ('Meet Smt. Anita Devi') -->
+  <section id="founder" class="py-14 sm:py-20 bg-white border-y border-amber-900/10">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="rounded-3xl bg-gradient-to-br from-maroon to-maroon-dark text-white overflow-hidden shadow-xl grid grid-cols-1 lg:grid-cols-12">
+        <!-- Left Visual & Founder Badge -->
+        <div class="lg:col-span-5 relative min-h-[320px] sm:min-h-[400px]">
+          <img
+            src="https://images.unsplash.com/photo-1583391733956-6c78276477e2?auto=format&fit=crop&w=800&q=80"
+            onerror="this.onerror=null;this.src='https://placehold.co/700x800/5C1219/FDF8F2?text=Smt.+Anita+Devi';"
+            alt="Traditional Indian Textiles handpicked by Smt. Anita Devi at Anita Garments Nohar"
+            class="w-full h-full object-cover"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-maroon-dark/95 via-maroon-dark/20 to-transparent lg:bg-gradient-to-r lg:from-transparent lg:to-maroon/40"></div>
+          <div class="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 bg-white/95 backdrop-blur-sm text-charcoal p-4 rounded-2xl shadow-lg border border-mustard/40">
+            <div class="flex items-center justify-between">
+              <div>
+                <p class="font-serif font-bold text-lg text-maroon" data-i18n="founderName">Meet Smt. Anita Devi</p>
+                <p class="text-xs font-semibold text-stone-600" data-i18n="founderRole">Founder &amp; Proprietor, Anita Garments (Nohar)</p>
+              </div>
+              <span class="w-10 h-10 rounded-full bg-maroon/10 text-maroon flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-award text-lg"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Founder Story -->
+        <div class="lg:col-span-7 p-6 sm:p-10 lg:p-12 flex flex-col justify-center space-y-5">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-mustard/20 text-mustard-light text-xs font-semibold w-fit">
+            <i class="fa-solid fa-heart"></i>
+            <span data-i18n="founderTag">A Personal Promise to Nohar &amp; Nearby Villages</span>
+          </div>
+
+          <h2 class="font-serif text-2xl sm:text-4xl font-bold leading-snug" data-i18n="founderHeading">
+            Handpicked Fabrics, Honest Advice &amp; Warm Hospitality
+          </h2>
+
+          <p class="text-amber-100/95 text-sm sm:text-base leading-relaxed" data-i18n="founderP1">
+            "Ram Ram &amp; Namaste! I founded <strong>Anita Garments</strong> on Bhadra Road, right near <strong>SNDB Government College, Nohar</strong>, with one clear belief: families from Nohar town and our surrounding villages like <strong>Bhukarka, Jasana, Phephana, and Rawatsar</strong> deserve durable, breathable fabrics suited for Rajasthan's weather without paying big-city markups."
+          </p>
+
+          <p class="text-amber-100/95 text-sm sm:text-base leading-relaxed" data-i18n="founderP2">
+            "Whether you are an SNDB College student picking out daily kurtis and jeans, a mother choosing traditional Bandhani sarees and odhanis, or shopping for your children's festivals, I personally check the stitching and color fastness of every piece. Visit our shop anytime—you will always be welcomed like family."
+          </p>
+
+          <!-- Local Areas Served Chips -->
+          <div class="pt-1">
+            <span class="block text-xs uppercase tracking-wider text-mustard-light font-semibold mb-2" data-i18n="villagesLabel">Proudly Serving Families From:</span>
+            <div class="flex flex-wrap gap-2 text-xs">
+              <span class="px-3 py-1 rounded-full bg-white/10 border border-white/15">Nohar Town</span>
+              <span class="px-3 py-1 rounded-full bg-white/10 border border-white/15">SNDB College Campus</span>
+              <span class="px-3 py-1 rounded-full bg-white/10 border border-white/15">Bhukarka</span>
+              <span class="px-3 py-1 rounded-full bg-white/10 border border-white/15">Jasana</span>
+              <span class="px-3 py-1 rounded-full bg-white/10 border border-white/15">Phephana</span>
+              <span class="px-3 py-1 rounded-full bg-white/10 border border-white/15">Rawatsar</span>
+            </div>
+          </div>
+
+          <div class="pt-2 flex flex-wrap items-center gap-4">
+            <a href="https://wa.me/919660864821?text=Namaste%20Anita%20Devi%20ji%2C%20I%20would%20like%20to%20enquire%20about%20clothes%20at%20Anita%20Garments%2C%20Nohar."
+               target="_blank" rel="noopener noreferrer"
+               class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-mustard hover:bg-mustard-light text-charcoal font-bold text-sm transition-colors">
+              <i class="fa-brands fa-whatsapp text-lg"></i>
+              <span data-i18n="founderBtn">Message Smt. Anita Devi</span>
+            </a>
+            <div class="text-xs sm:text-sm text-amber-200">
+              <span class="block font-semibold text-white" data-i18n="directContactLabel">Direct Shop Contact:</span>
+              <span>+91 96608 64821</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WhatsApp Video Call & Stock Check Quick Form -->
+  <section id="video-enquiry" class="py-14 sm:py-16 bg-sand/70 border-b border-amber-900/10">
+    <div class="max-w-4xl mx-auto px-4">
+      <div class="bg-white rounded-3xl p-6 sm:p-10 border border-amber-900/10 shadow-md">
+        <div class="text-center max-w-xl mx-auto mb-7">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-whatsapp/15 text-whatsapp text-xs font-bold mb-2">
+            <i class="fa-solid fa-video"></i>
+            <span data-i18n="formBadge">Convenient for Village &amp; Out-of-Town Customers</span>
+          </span>
+          <h2 class="font-serif text-2xl sm:text-3xl font-bold text-charcoal" data-i18n="formTitle">Book a WhatsApp Video Call / Check Stock</h2>
+          <p class="text-stone-600 text-xs sm:text-sm mt-2" data-i18n="formDesc">
+            Fill in what you are looking for below. Clicking send will open WhatsApp with your details ready to send directly to <strong>+91 96608 64821</strong>.
+          </p>
+        </div>
+
+        <form id="whatsapp-enquiry-form" class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
+          <div>
+            <label for="cust-name" class="block text-xs sm:text-sm font-semibold text-charcoal mb-1.5" data-i18n="lblName">Your Name *</label>
+            <input type="text" id="cust-name" required placeholder="e.g., Sunita Sharma / Rahul"
+                   class="w-full px-4 py-3 rounded-xl bg-cream border border-amber-900/20 text-sm focus:outline-none focus:border-maroon" />
+          </div>
+
+          <div>
+            <label for="cust-village" class="block text-xs sm:text-sm font-semibold text-charcoal mb-1.5" data-i18n="lblVillage">Village / Locality *</label>
+            <input type="text" id="cust-village" required placeholder="e.g., Nohar, Bhukarka, Jasana, Phephana"
+                   class="w-full px-4 py-3 rounded-xl bg-cream border border-amber-900/20 text-sm focus:outline-none focus:border-maroon" />
+          </div>
+
+          <div>
+            <label for="cust-category" class="block text-xs sm:text-sm font-semibold text-charcoal mb-1.5" data-i18n="lblCategory">What are you looking for? *</label>
+            <select id="cust-category"
+                    class="w-full px-4 py-3 rounded-xl bg-cream border border-amber-900/20 text-sm focus:outline-none focus:border-maroon">
+              <option value="Women's Sarees / Suits / Odhanis">Women's Sarees / Suits / Odhanis</option>
+              <option value="College Kurtis, Jeans & Tops">College Kurtis, Jeans &amp; Tops</option>
+              <option value="Men's Formal Shirts / Kurtas">Men's Formal Shirts / Kurtas</option>
+              <option value="Kids' Festive / Daily Wear">Kids' Festive / Daily Wear</option>
+              <option value="Wedding (Shaadi) Bulk Shopping">Wedding (Shaadi) Bulk Shopping</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="cust-type" class="block text-xs sm:text-sm font-semibold text-charcoal mb-1.5" data-i18n="lblType">Preferred Option *</label>
+            <select id="cust-type"
+                    class="w-full px-4 py-3 rounded-xl bg-cream border border-amber-900/20 text-sm focus:outline-none focus:border-maroon">
+              <option value="Send Latest Photos on WhatsApp">Send Latest Photos on WhatsApp</option>
+              <option value="Book a 5-Min WhatsApp Video Call">Book a 5-Min WhatsApp Video Call</option>
+              <option value="Confirm Store Availability Before Visiting">Confirm Stock Before Visiting Shop</option>
+            </select>
+          </div>
+
+          <div class="sm:col-span-2">
+            <label for="cust-notes" class="block text-xs sm:text-sm font-semibold text-charcoal mb-1.5" data-i18n="lblNotes">Size, Color or Budget Notes (Optional)</label>
+            <input type="text" id="cust-notes" placeholder="e.g., Cotton kurti size L around ₹500, or red Bandhani saree"
+                   class="w-full px-4 py-3 rounded-xl bg-cream border border-amber-900/20 text-sm focus:outline-none focus:border-maroon" />
+          </div>
+
+          <div class="sm:col-span-2 pt-1">
+            <button type="submit"
+                    class="w-full inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-xl bg-whatsapp hover:bg-emerald-700 text-white font-bold text-sm sm:text-base shadow-md transition-all">
+              <i class="fa-brands fa-whatsapp text-xl"></i>
+              <span data-i18n="btnSubmitEnquiry">Send Enquiry on WhatsApp (+91 96608 64821)</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Store Location & Contact Section -->
+  <section id="visit" class="py-14 sm:py-20 bg-cream">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <span class="text-maroon font-semibold text-xs sm:text-sm uppercase tracking-wider" data-i18n="visitSub">Easy Landmark on Bhadra Road</span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-charcoal mt-1" data-i18n="visitTitle">Visit Anita Garments in Nohar</h2>
+        <p class="text-stone-600 text-sm sm:text-base mt-2" data-i18n="visitDesc">
+          Right near SNDB Government College on Bhadra Road—drop by to check fabric quality in person or follow the Google Maps pin below.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+        <!-- Contact Details Card -->
+        <div class="lg:col-span-5 bg-white rounded-3xl p-6 sm:p-8 border border-amber-900/10 shadow-md flex flex-col justify-between space-y-6">
+          <div class="space-y-5">
+            <div>
+              <h3 class="font-serif text-2xl font-bold text-maroon">Anita Garments <span class="text-lg font-normal text-stone-600">(अनीता गारमेंट्स)</span></h3>
+              <p class="text-sm text-stone-500 font-medium mt-0.5" data-i18n="propLine">Proprietor: Smt. Anita Devi</p>
+            </div>
+
+            <div class="space-y-4 text-sm sm:text-base">
+              <div class="flex items-start gap-3.5">
+                <div class="w-10 h-10 rounded-xl bg-maroon/10 text-maroon flex items-center justify-center shrink-0 mt-0.5">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div>
+                  <span class="block font-bold text-charcoal" data-i18n="addrLabel">Complete Store Address</span>
+                  <span class="text-stone-600" data-i18n="addrText">Near SNDB Government College, Bhadra Road, Nohar, District Hanumangarh, Rajasthan - 335523</span>
+                  <div class="mt-2 inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-amber-50 border border-mustard/40 text-xs font-semibold text-maroon">
+                    <i class="fa-solid fa-map-pin text-mustard-dark"></i>
+                    <span>Plus Code: 5QRM+QG7 Nohar, Rajasthan</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3.5">
+                <div class="w-10 h-10 rounded-xl bg-whatsapp/15 text-whatsapp flex items-center justify-center shrink-0 mt-0.5">
+                  <i class="fa-solid fa-phone-volume"></i>
+                </div>
+                <div>
+                  <span class="block font-bold text-charcoal" data-i18n="phoneLabel">Phone &amp; WhatsApp</span>
+                  <a href="tel:+919660864821" class="text-maroon font-semibold hover:underline">+91 96608 64821</a>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3.5">
+                <div class="w-10 h-10 rounded-xl bg-mustard/20 text-mustard-dark flex items-center justify-center shrink-0 mt-0.5">
+                  <i class="fa-solid fa-clock"></i>
+                </div>
+                <div>
+                  <span class="block font-bold text-charcoal" data-i18n="hoursLabel">Store Timings</span>
+                  <span class="text-stone-600" data-i18n="hoursText">Open All 7 Days: 9:30 AM – 8:30 PM</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="pt-2 grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <a href="tel:+919660864821"
+               class="inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-maroon hover:bg-maroon-dark text-white font-semibold text-sm transition-colors">
+              <i class="fa-solid fa-phone"></i>
+              <span data-i18n="btnCallNow">Call Store</span>
+            </a>
+            <a href="https://wa.me/919660864821?text=Namaste%20Anita%20ji%2C%20please%20share%20exact%20location%20pin%20for%20Anita%20Garments%20near%20SNDB%20College%2C%20Bhadra%20Road%2C%20Nohar."
+               target="_blank" rel="noopener noreferrer"
+               class="inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-whatsapp hover:bg-emerald-700 text-white font-semibold text-sm transition-colors">
+              <i class="fa-brands fa-whatsapp text-base"></i>
+              <span data-i18n="btnWaPin">Ask Location on WA</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Embedded Google Map Centered on 5QRM+QG7 Nohar, Rajasthan -->
+        <div class="lg:col-span-7 bg-white rounded-3xl overflow-hidden border border-amber-900/10 shadow-md min-h-[340px] sm:min-h-[420px] flex flex-col">
+          <iframe
+            title="Map showing Anita Garments at 5QRM+QG7 Nohar, Rajasthan near SNDB Government College"
+            src="https://www.google.com/maps?q=5QRM%2BQG7+Nohar,+Rajasthan&output=embed"
+            class="w-full h-full flex-1 border-0 min-h-[330px]"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+          <div class="bg-sand px-5 py-3.5 flex flex-wrap items-center justify-between gap-2 text-xs sm:text-sm">
+            <span class="text-stone-700 font-medium">
+              <i class="fa-solid fa-landmark text-maroon mr-1.5"></i>
+              Pin: <strong>5QRM+QG7 Nohar, Rajasthan</strong> (Near SNDB Govt. College, Bhadra Road)
+            </span>
+            <a href="https://www.google.com/maps/search/?api=1&query=5QRM%2BQG7+Nohar,+Rajasthan"
+               target="_blank" rel="noopener noreferrer"
+               class="text-maroon font-bold hover:underline">
+              <span data-i18n="openMaps">Open in Google Maps</span> <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-charcoal text-stone-300 pt-12 pb-24 sm:pb-12">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 pb-8 border-b border-stone-700/70">
+        <div>
+          <span class="font-serif text-2xl font-bold text-white">Anita Garments <span class="text-lg font-normal text-mustard-light">(अनीता गारमेंट्स)</span></span>
+          <p class="text-sm text-stone-400 mt-2 leading-relaxed" data-i18n="footerDesc">
+            Complete family clothing &amp; ethnic wear store on Bhadra Road, Nohar. Serving Nohar town, SNDB College students, and nearby villages with honest prices.
+          </p>
+          <p class="text-xs text-mustard-light font-semibold mt-3" data-i18n="footerFounder">Founded by Smt. Anita Devi</p>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-3" data-i18n="footerLinksTitle">Quick Navigation</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#home" class="hover:text-mustard-light transition-colors" data-i18n="navHome">Home</a></li>
+            <li><a href="#collection" class="hover:text-mustard-light transition-colors" data-i18n="navCollection">Collections (₹249 onwards)</a></li>
+            <li><a href="#founder" class="hover:text-mustard-light transition-colors" data-i18n="navFounder">Meet Smt. Anita Devi</a></li>
+            <li><a href="#video-enquiry" class="hover:text-mustard-light transition-colors" data-i18n="navVideo">WhatsApp Video Call / Enquiry</a></li>
+            <li><a href="#visit" class="hover:text-mustard-light transition-colors" data-i18n="navVisit">Store Address &amp; Map</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-3" data-i18n="footerContactTitle">Store Address &amp; Contact</h4>
+          <p class="text-sm text-stone-400">Near SNDB Government College, Bhadra Road, Nohar, District Hanumangarh, Rajasthan - 335523</p>
+          <p class="text-xs text-mustard-light font-medium mt-1.5">Google Maps Plus Code: 5QRM+QG7 Nohar, Rajasthan</p>
+          <p class="text-sm text-white font-semibold mt-2">
+            Phone / WhatsApp: <a href="tel:+919660864821" class="text-mustard-light hover:underline">+91 96608 64821</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-400 gap-2">
+        <p>&copy; <span id="year"></span> Anita Garments (अनीता गारमेंट्स), Nohar. All rights reserved.</p>
+        <p>Near SNDB Government College, Bhadra Road, Nohar (335523)</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button for Instant Mobile Enquiries -->
+  <a href="https://wa.me/919660864821?text=Namaste%20Anita%20ji%2C%20I%20would%20like%20to%20enquire%20about%20clothes%20at%20Anita%20Garments%2C%20Nohar."
+     target="_blank" rel="noopener noreferrer"
+     aria-label="Chat on WhatsApp with Anita Garments"
+     class="fixed bottom-5 right-5 z-50 flex items-center gap-2.5 bg-whatsapp hover:bg-emerald-700 text-white px-4 py-3.5 rounded-full shadow-2xl transition-transform hover:scale-105">
+    <i class="fa-brands fa-whatsapp text-2xl"></i>
+    <span class="font-semibold text-sm pr-1" data-i18n="floatingWa">WhatsApp Anita Garments</span>
+  </a>
+
+  <!-- Bilingual Dictionary, Product Catalogue & WhatsApp Enquiry Logic -->
+  <script>
+    let currentLang = "en";
+
+    // Bilingual UI Translations (English & Hindi)
+    const translations = {
+      en: {
+        topAddress: "Near SNDB Government College, Bhadra Road, Nohar, Dist. Hanumangarh (335523)",
+        topHours: "Open All 7 Days: 9:30 AM – 8:30 PM",
+        brandName: "Anita Garments",
+        brandSub: "अनीता गारमेंट्स • Nohar",
+        navHome: "Home",
+        navCollection: "Collections",
+        navFounder: "Smt. Anita Devi",
+        navVideo: "Video Call / Enquiry",
+        navVisit: "Store & Map",
+        btnCall: "Call",
+        btnWhatsapp: "WhatsApp",
+        heroBadge: "Complete Family Clothing & Ethnic Store • Nohar (335523)",
+        heroTitle: 'Trusted Fabrics & Honest Prices for Every Family in <span class="text-maroon">Nohar</span>',
+        heroDesc: 'Welcome to <strong>Anita Garments (अनीता गारमेंट्स)</strong>, founded by <strong>Smt. Anita Devi</strong>. Located on <strong>Bhadra Road, near SNDB Government College</strong>, we bring handpicked Sarees, Jaipuri Kurti Sets, Rajasthani Odhanis, College Wear, Gents Shirts, and Kids\' Festive Outfits starting at <strong>₹249 onwards</strong>.',
+        heroBtnBrowse: "Explore Latest Collection",
+        heroBtnVideo: "Book WhatsApp Video Call",
+        trust1: "Starting ₹249 Onwards",
+        trust2: "SNDB College Student Friendly",
+        trust3: "Serving Nohar & Nearby Villages",
+        heroCardBadge: "Wedding & Daily Wear Stock",
+        heroCardTitle: "Anita Garments — अनीता गारमेंट्स",
+        heroCardSub: "Near SNDB Govt. College • Ladies, College Youth, Gents & Kids",
+        perk1Title: "Honest Fixed Prices",
+        perk1Desc: "No bargaining stress—transparent, genuine rates for every customer from ₹249 onwards.",
+        perk2Title: "7-Day Easy Size Exchange",
+        perk2Desc: "Bought for family at home? Easily exchange sizes within 7 days with tag intact.",
+        perk3Title: "Shaadi & Family Discounts",
+        perk3Desc: "Special bundle discounts on wedding sarees, gifting suits, and full-family shopping.",
+        perk4Title: "WhatsApp Video Selection",
+        perk4Desc: "Coming from Bhukarka, Jasana, Phephana or Rawatsar? Preview stock on video call first!",
+        catSub: "Handpicked For Nohar Families",
+        catTitle: "Our Clothing Collections",
+        catDesc: 'Realistic everyday & festive prices starting at ₹249. Tap <strong>"Order / Ask on WhatsApp"</strong> on any garment to check colors & sizes directly with Anita Devi.',
+        tabAll: "All Items",
+        tabWomen: "Women's Ethnic & Daily",
+        tabCollege: "College & Youth Essentials",
+        tabMen: "Men's Wear",
+        tabKids: "Kids' Wear",
+        bulkTitle: "Shopping for a Wedding (Shaadi) or College Fest?",
+        bulkDesc: "We keep fresh weekly arrivals in store! Message us on WhatsApp to receive live photos of new sarees, suits, jeans & shirts.",
+        bulkBtn: "Get Latest Stock Photos",
+        founderName: "Meet Smt. Anita Devi",
+        founderRole: "Founder & Proprietor, Anita Garments (Nohar)",
+        founderTag: "A Personal Promise to Nohar & Nearby Villages",
+        founderHeading: "Handpicked Fabrics, Honest Advice & Warm Hospitality",
+        founderP1: '"Ram Ram & Namaste! I founded <strong>Anita Garments</strong> on Bhadra Road, right near <strong>SNDB Government College, Nohar</strong>, with one clear belief: families from Nohar town and our surrounding villages like <strong>Bhukarka, Jasana, Phephana, and Rawatsar</strong> deserve durable, breathable fabrics suited for Rajasthan\'s weather without paying big-city markups."',
+        founderP2: '"Whether you are an SNDB College student picking out daily kurtis and jeans, a mother choosing traditional Bandhani sarees and odhanis, or shopping for your children\'s festivals, I personally check the stitching and color fastness of every piece. Visit our shop anytime—you will always be welcomed like family."',
+        villagesLabel: "Proudly Serving Families From:",
+        founderBtn: "Message Smt. Anita Devi",
+        directContactLabel: "Direct Shop Contact:",
+        formBadge: "Convenient for Village & Out-of-Town Customers",
+        formTitle: "Book a WhatsApp Video Call / Check Stock",
+        formDesc: 'Fill in what you are looking for below. Clicking send will open WhatsApp with your details ready to send directly to <strong>+91 96608 64821</strong>.',
+        lblName: "Your Name *",
+        lblVillage: "Village / Locality *",
+        lblCategory: "What are you looking for? *",
+        lblType: "Preferred Option *",
+        lblNotes: "Size, Color or Budget Notes (Optional)",
+        btnSubmitEnquiry: "Send Enquiry on WhatsApp (+91 96608 64821)",
+        visitSub: "Easy Landmark on Bhadra Road",
+        visitTitle: "Visit Anita Garments in Nohar",
+        visitDesc: "Right near SNDB Government College on Bhadra Road—drop by to check fabric quality in person or follow the Google Maps pin below.",
+        propLine: "Proprietor: Smt. Anita Devi",
+        addrLabel: "Complete Store Address",
+        addrText: "Near SNDB Government College, Bhadra Road, Nohar, District Hanumangarh, Rajasthan - 335523",
+        phoneLabel: "Phone & WhatsApp",
+        hoursLabel: "Store Timings",
+        hoursText: "Open All 7 Days: 9:30 AM – 8:30 PM",
+        btnCallNow: "Call Store",
+        btnWaPin: "Ask Location on WA",
+        openMaps: "Open in Google Maps",
+        footerDesc: "Complete family clothing & ethnic wear store on Bhadra Road, Nohar. Serving Nohar town, SNDB College students, and nearby villages with honest prices.",
+        footerFounder: "Founded by Smt. Anita Devi",
+        footerLinksTitle: "Quick Navigation",
+        footerContactTitle: "Store Address & Contact",
+        floatingWa: "WhatsApp Anita Garments",
+        cardOrderBtn: "Order / Ask on WhatsApp"
+      },
+      hi: {
+        topAddress: "SNDB गवर्नमेंट कॉलेज के पास, भादरा रोड, नोहर, जिला हनुमानगढ़ (335523)",
+        topHours: "सभी 7 दिन खुला: सुबह 9:30 – रात 8:30 बजे",
+        brandName: "अनीता गारमेंट्स",
+        brandSub: "Anita Garments • नोहर",
+        navHome: "होम",
+        navCollection: "कलेक्शन",
+        navFounder: "श्रीमती अनीता देवी",
+        navVideo: "वीडियो कॉल / पूछताछ",
+        navVisit: "पता और मैप",
+        btnCall: "कॉल करें",
+        btnWhatsapp: "व्हाट्सएप",
+        heroBadge: "सम्पूर्ण पारिवारिक वस्त्र एवं एथनिक स्टोर • नोहर (335523)",
+        heroTitle: 'नोहर के हर परिवार के लिए भरोसेमंद कपड़ा और <span class="text-maroon">ईमानदार दाम</span>',
+        heroDesc: '<strong>अनीता गारमेंट्स (Anita Garments)</strong> में आपका स्वागत है (संस्थापक: <strong>श्रीमती अनीता देवी</strong>)। <strong>भादरा रोड, SNDB गवर्नमेंट कॉलेज के पास</strong> स्थित हमारी दुकान पर साड़ियां, जयपुरी कुर्ती सेट, राजस्थानी ओढ़नी, कॉलेज वियर, जेंट्स शर्ट और बच्चों के कपड़े मात्र <strong>₹249 से शुरू</strong>।',
+        heroBtnBrowse: "नया कलेक्शन देखें",
+        heroBtnVideo: "व्हाट्सएप वीडियो कॉल बुक करें",
+        trust1: "शुरुआती कीमत ₹249 से",
+        trust2: "SNDB कॉलेज विद्यार्थियों की पहली पसंद",
+        trust3: "नोहर और आसपास के गांवों का भरोसा",
+        heroCardBadge: "शादी-ब्याह एवं डेली वियर स्टॉक",
+        heroCardTitle: "अनीता गारमेंट्स — Anita Garments",
+        heroCardSub: "SNDB कॉलेज के पास • लेडीज, कॉलेज यूथ, जेंट्स और किड्स वियर",
+        perk1Title: "ईमानदार और फिक्स रेट",
+        perk1Desc: "मोलभाव की कोई झंझट नहीं—₹249 से शुरू होने वाले हर कपड़े पर सही और पारदर्शी दाम।",
+        perk2Title: "7-दिन आसान साइज एक्सचेंज",
+        perk2Desc: "घर पर साइज छोटा या बड़ा निकले? टैग लगे होने पर 7 दिनों के भीतर आसानी से बदलें।",
+        perk3Title: "शादी और फैमिली शॉपिंग छूट",
+        perk3Desc: "शादी-ब्याह की साड़ियों, सूट और पूरे परिवार की एक साथ खरीदारी पर विशेष छूट।",
+        perk4Title: "व्हाट्सएप वीडियो कॉल सुविधा",
+        perk4Desc: "भुकरका, जसाना, फेफाना या रावतसर से आ रहे हैं? दुकान आने से पहले वीडियो कॉल पर कपड़े देखें!",
+        catSub: "नोहर के परिवारों के लिए खास",
+        catTitle: "हमारा वस्त्र कलेक्शन",
+        catDesc: '₹249 से शुरू होने वाले शानदार और टिकाऊ परिधान। रंग और साइज की जानकारी के लिए किसी भी कपड़े पर <strong>"व्हाट्सएप पर ऑर्डर / पूछताछ करें"</strong> दबाएं।',
+        tabAll: "सभी कपड़े",
+        tabWomen: "लेडीज एथनिक और डेली वियर",
+        tabCollege: "कॉलेज और यूथ कलेक्शन",
+        tabMen: "जेंट्स वियर",
+        tabKids: "बच्चों के कपड़े",
+        bulkTitle: "शादी-ब्याह या कॉलेज फंक्शन की खरीदारी करनी है?",
+        bulkDesc: "हमारी दुकान पर हर हफ्ते नया स्टॉक आता है! नई साड़ियों, सूट, जींस और शर्ट की लाइव फोटो पाने के लिए व्हाट्सएप करें।",
+        bulkBtn: "नए स्टॉक की फोटो मंगवाएं",
+        founderName: "मिलिए श्रीमती अनीता देवी से",
+        founderRole: "संस्थापक एवं संचालिका, अनीता गारमेंट्स (नोहर)",
+        founderTag: "नोहर और आसपास के गांवों से हमारा वादा",
+        founderHeading: "चुनिंदा कपड़ा, सच्ची सलाह और अपनों जैसा व्यवहार",
+        founderP1: '"राम-राम और नमस्ते! मैंने <strong>भादरा रोड, SNDB गवर्नमेंट कॉलेज, नोहर</strong> के पास <strong>अनीता गारमेंट्स</strong> की शुरुआत इसी सोच के साथ की थी कि नोहर शहर और आसपास के गांवों जैसे <strong>भुकरका, जसाना, फेफाना और रावतसर</strong> के परिवारों को राजस्थान के मौसम के अनुकूल मजबूत और आरामदायक कपड़ा सही दाम पर मिल सके।"',
+        founderP2: '"चाहे SNDB कॉलेज के विद्यार्थी रोजमर्रा के लिए कुर्ती और जींस लेने आएं, या माताएं-बहनें पारंपरिक बंधेज साड़ी और ओढ़नी चुनें—मैं हर कपड़े की सिलाई और रंग की पक्की जांच खुद करती हूं। हमारी दुकान पर कभी भी पधारें, आपका हमेशा स्वागत है।"',
+        villagesLabel: "इन क्षेत्रों के परिवारों की सेवा में:",
+        founderBtn: "श्रीमती अनीता देवी को मैसेज करें",
+        directContactLabel: "दुकान का सीधा संपर्क:",
+        formBadge: "गांव और बाहर से आने वाले ग्राहकों के लिए सुविधा",
+        formTitle: "व्हाट्सएप वीडियो कॉल बुक करें / स्टॉक पूछें",
+        formDesc: 'नीचे अपनी पसंद भरें। बटन दबाते ही आपकी जानकारी के साथ सीधा <strong>+91 96608 64821</strong> पर व्हाट्सएप खुल जाएगा।',
+        lblName: "आपका नाम *",
+        lblVillage: "गांव / मोहल्ला *",
+        lblCategory: "आपको क्या खरीदना है? *",
+        lblType: "आप क्या चाहते हैं? *",
+        lblNotes: "साइज, रंग या बजट लिखें (वैकल्पिक)",
+        btnSubmitEnquiry: "व्हाट्सएप पर पूछताछ भेजें (+91 96608 64821)",
+        visitSub: "भादरा रोड पर आसान लोकेशन",
+        visitTitle: "नोहर में हमारी दुकान पर पधारें",
+        visitDesc: "भादरा रोड पर SNDB गवर्नमेंट कॉलेज के बिल्कुल पास—कपड़े की क्वालिटी खुद देखने के लिए दुकान पर आएं या नीचे दिए मैप का उपयोग करें।",
+        propLine: "संचालिका: श्रीमती अनीता देवी",
+        addrLabel: "दुकान का पूरा पता",
+        addrText: "SNDB गवर्नमेंट कॉलेज के पास, भादरा रोड, नोहर, जिला हनुमानगढ़, राजस्थान - 335523",
+        phoneLabel: "फोन और व्हाट्सएप",
+        hoursLabel: "दुकान का समय",
+        hoursText: "सभी 7 दिन खुला: सुबह 9:30 से रात 8:30 बजे तक",
+        btnCallNow: "अभी कॉल करें",
+        btnWaPin: "व्हाट्सएप पर लोकेशन लें",
+        openMaps: "गूगल मैप्स में खोलें",
+        footerDesc: "भादरा रोड, नोहर पर सम्पूर्ण पारिवारिक वस्त्र स्टोर। नोहर शहर, SNDB कॉलेज के विद्यार्थियों और आसपास के गांवों के लिए भरोसेमंद खरीदारी केंद्र।",
+        footerFounder: "संस्थापक: श्रीमती अनीता देवी",
+        footerLinksTitle: "त्वरित लिंक",
+        footerContactTitle: "पता और संपर्क",
+        floatingWa: "व्हाट्सएप अनीता गारमेंट्स",
+        cardOrderBtn: "व्हाट्सएप पर ऑर्डर / पूछताछ करें"
+      }
+    };
+
+    // Curated Product Catalog with Authentic Photography & Realistic Nohar Prices (₹249 onwards)
+    const products = [
+      {
+        id: 1,
+        category: "women",
+        price: "₹1,150",
+        title: {
+          en: "Rajasthani Bandhani & Leheriya Saree",
+          hi: "राजस्थानी बंधेज और लहरिया साड़ी"
+        },
+        categoryLabel: {
+          en: "Women's Ethnic",
+          hi: "लेडीज एथनिक"
+        },
+        description: {
+          en: "Traditional Bandhej & Leheriya saree with rich zari border and matching blouse piece—ideal for weddings & family functions.",
+          hi: "पारंपरिक बंधेज और लहरिया साड़ी, शानदार जरी बॉर्डर और मैचिंग ब्लाउज पीस के साथ—शादी-ब्याह और त्योहारों के लिए उत्तम।"
+        },
+        image: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=700&q=80"
+      },
+      {
+        id: 2,
+        category: "women",
+        price: "₹699",
+        title: {
+          en: "Jaipuri Pure Cotton Kurti & Dupatta Set",
+          hi: "जयपुरी प्योर कॉटन कुर्ती और दुपट्टा सेट"
+        },
+        categoryLabel: {
+          en: "Women's Daily Wear",
+          hi: "लेडीज डेली वियर"
+        },
+        description: {
+          en: "Soft, color-fast Jaipuri cotton suit set designed for Rajasthan's climate—comfortable for all-day home and market wear.",
+          hi: "राजस्थान के मौसम के अनुकूल मुलायम और पक्के रंगों वाला जयपुरी कॉटन सूट सेट—दिनभर पहनने के लिए बेहद आरामदायक।"
+        },
+        image: "https://images.unsplash.com/photo-1583391733956-6c78276477e2?auto=format&fit=crop&w=700&q=80"
+      },
+      {
+        id: 3,
+        category: "women",
+        price: "₹249 onwards",
+        title: {
+          en: "Rajasthani Odhanis, Chunri & Cotton Dupattas",
+          hi: "राजस्थानी ओढ़नी, चुनरी और कॉटन दुपट्टे"
+        },
+        categoryLabel: {
+          en: "Odhanis & Dupattas",
+          hi: "ओढ़नी और दुपट्टे"
+        },
+        description: {
+          en: "Wide range of traditional gota-patti odhanis, festive chunris, and pure cotton stoles starting at just ₹249.",
+          hi: "पारंपरिक गोटा-पत्ती ओढ़नी, त्योहारी चुनरी और प्योर कॉटन स्टोल की विशाल रेंज मात्र ₹249 से शुरू।"
+        },
+        image: "https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?auto=format&fit=crop&w=700&q=80"
+      },
+      {
+        id: 4,
+        category: "college",
+        price: "₹349 onwards",
+        title: {
+          en: "SNDB College Daily Kurtis & Tops",
+          hi: "SNDB कॉलेज डेली कुर्तियां और टॉप्स"
+        },
+        categoryLabel: {
+          en: "College & Youth",
+          hi: "कॉलेज और यूथ"
+        },
+        description: {
+          en: "Trendy straight kurtis, short kurtis, and breathable cotton tops—the #1 daily choice for SNDB Government College students.",
+          hi: "ट्रेंडी स्ट्रेट कुर्तियां, शॉर्ट कुर्ती और आरामदायक कॉटन टॉप्स—SNDB गवर्नमेंट कॉलेज की छात्राओं की पहली पसंद।"
+        },
+        image: "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=700&q=80"
+      },
+      {
+        id: 5,
+        category: "college",
+        price: "₹599",
+        title: {
+          en: "Stretchable Denim Jeans & Casual Jeggings",
+          hi: "स्ट्रेचेबल डेनिम जींस और कैजुअल जेगिंग्स"
+        },
+        categoryLabel: {
+          en: "College & Youth",
+          hi: "कॉलेज और यूथ"
+        },
+        description: {
+          en: "Durable high-stretch jeans and comfortable trousers in blue, black, and grey shades for college and everyday travel.",
+          hi: "कॉलेज और रोजमर्रा के लिए मजबूत स्ट्रेचेबल जींस और आरामदायक ट्राउजर—नीले, काले और ग्रे रंगों में उपलब्ध।"
+        },
+        image: "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=700&q=80"
+      },
+      {
+        id: 6,
+        category: "men",
+        price: "₹499",
+        title: {
+          en: "Men's Cotton Formal & Check Shirts",
+          hi: "जेंट्स कॉटन फॉर्मल और चेक शर्ट्स"
+        },
+        categoryLabel: {
+          en: "Men's Wear",
+          hi: "जेंट्स वियर"
+        },
+        description: {
+          en: "Smart cotton formal shirts and casual checks for office, college, and daily wear. Sizes M, L, XL, and XXL available.",
+          hi: "ऑफिस, कॉलेज और डेली वियर के लिए स्मार्ट कॉटन फॉर्मल और चेक शर्ट्स। साइज M, L, XL और XXL में उपलब्ध।"
+        },
+        image: "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=700&q=80"
+      },
+      {
+        id: 7,
+        category: "men",
+        price: "₹799",
+        title: {
+          en: "Men's Festive Cotton Kurta Pyjama Set",
+          hi: "जेंट्स फेस्टिव कॉटन कुर्ता पायजामा सेट"
+        },
+        categoryLabel: {
+          en: "Men's Festive",
+          hi: "जेंट्स फेस्टिव"
+        },
+        description: {
+          en: "Crisp handloom-finish cotton kurta with comfortable pyjama—ideal for weddings, pujas, and festive gatherings.",
+          hi: "शादी-ब्याह, पूजा और त्योहारों के लिए शानदार कॉटन कुर्ता और आरामदायक पायजामा सेट।"
+        },
+        image: "https://images.unsplash.com/photo-1597983073493-88cd35cf93b0?auto=format&fit=crop&w=700&q=80"
+      },
+      {
+        id: 8,
+        category: "men",
+        price: "₹299 onwards",
+        title: {
+          en: "Men's Casual T-Shirts & Cotton Trousers",
+          hi: "जेंट्स कैजुअल टी-शर्ट और कॉटन ट्राउजर"
+        },
+        categoryLabel: {
+          en: "Men's Daily Wear",
+          hi: "जेंट्स डेली वियर"
+        },
+        description: {
+          en: "Soft collar polo t-shirts, round-neck tees, and stretchable cotton pants at honest pocket-friendly prices.",
+          hi: "मुलायम कॉलर टी-शर्ट, राउंड-नेक टी-शर्ट और स्ट्रेचेबल कॉटन पैंट बेहद किफायती दामों पर।"
+        },
+        image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=700&q=80"
+      },
+      {
+        id: 9,
+        category: "kids",
+        price: "₹399 onwards",
+        title: {
+          en: "Kids' Festive Kurta Sets, Frocks & Daily Wear",
+          hi: "बच्चों के फेस्टिव कुर्ता सेट, फ्रॉक और डेली वियर"
+        },
+        categoryLabel: {
+          en: "Kids' Wear",
+          hi: "बच्चों के कपड़े"
+        },
+        description: {
+          en: "Skin-friendly soft cotton outfits, party frocks, and ethnic kurta sets for boys & girls (ages 1 to 14 years).",
+          hi: "1 से 14 साल तक के लड़कों और लड़कियों के लिए मुलायम कॉटन के कपड़े, पार्टी फ्रॉक और एथनिक कुर्ता सेट।"
+        },
+        image: "https://images.unsplash.com/photo-1622290291468-a28f7a7dc6a8?auto=format&fit=crop&w=700&q=80"
+      }
+    ];
+
+    const phoneNumber = "919660864821";
+    const productGrid = document.getElementById("product-grid");
+    const filterButtons = document.querySelectorAll(".filter-btn");
+    let activeCategory = "all";
+
+    // Render Product Cards in active language & category
+    function renderProducts(selectedCategory = activeCategory) {
+      activeCategory = selectedCategory;
+      const filtered = selectedCategory === "all"
+        ? products
+        : products.filter(item => item.category === selectedCategory);
+
+      const orderBtnText = translations[currentLang].cardOrderBtn;
+
+      productGrid.innerHTML = filtered.map(item => {
+        const titleText = item.title[currentLang];
+        const catLabelText = item.categoryLabel[currentLang];
+        const descText = item.description[currentLang];
+
+        const waMessage = encodeURIComponent(
+          `Namaste Anita ji, I am interested in "${item.title.en}" (${item.price}) from Anita Garments website. Please share available colors & sizes at your Nohar store.`
+        );
+        const waUrl = `https://wa.me/${phoneNumber}?text=${waMessage}`;
+
+        return `
+          <article class="bg-white rounded-2xl overflow-hidden border border-amber-900/10 shadow-sm hover:shadow-lg transition-all flex flex-col justify-between group">
+            <div>
+              <div class="relative h-64 overflow-hidden bg-sand">
+                <img
+                  src="${item.image}"
+                  onerror="this.onerror=null;this.src='https://placehold.co/600x500/F5ECE0/7C1D26?text=${encodeURIComponent(item.title.en)}';"
+                  alt="${titleText}"
+                  loading="lazy"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-cream/95 text-maroon text-xs font-bold shadow-sm">
+                  ${catLabelText}
+                </span>
+              </div>
+
+              <div class="p-5">
+                <div class="flex items-start justify-between gap-2">
+                  <h3 class="font-serif font-bold text-lg text-charcoal leading-snug">${titleText}</h3>
+                  <span class="shrink-0 font-bold text-maroon text-sm sm:text-base bg-maroon/10 px-2.5 py-1 rounded-lg">${item.price}</span>
+                </div>
+                <p class="text-stone-600 text-xs sm:text-sm mt-2.5 leading-relaxed">
+                  ${descText}
+                </p>
+              </div>
+            </div>
+
+            <div class="px-5 pb-5 pt-1">
+              <a href="${waUrl}" target="_blank" rel="noopener noreferrer"
+                 class="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-whatsapp hover:bg-emerald-700 text-white font-semibold text-sm shadow-sm transition-colors">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+                <span>${orderBtnText}</span>
+              </a>
+            </div>
+          </article>
+        `;
+      }).join("");
+    }
+
+    // Apply Bilingual Switch (English <-> हिन्दी)
+    function applyLanguage(lang) {
+      currentLang = lang;
+      document.documentElement.lang = lang;
+
+      const dict = translations[lang];
+      document.querySelectorAll("[data-i18n]").forEach(el => {
+        const key = el.getAttribute("data-i18n");
+        if (dict[key]) {
+          el.innerHTML = dict[key];
+        }
+      });
+
+      // Update toggle button text to show the opposite language option
+      document.getElementById("lang-toggle-label").textContent = lang === "en" ? "हिन्दी" : "English";
+
+      // Re-render product cards in selected language
+      renderProducts(activeCategory);
+    }
+
+    // Language toggle click handler
+    document.getElementById("lang-toggle").addEventListener("click", () => {
+      applyLanguage(currentLang === "en" ? "hi" : "en");
+    });
+
+    // Category filter click handlers
+    filterButtons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        filterButtons.forEach(b => {
+          b.classList.remove("bg-maroon", "text-white", "shadow-sm");
+          b.classList.add("bg-white", "text-stone-700", "border", "border-amber-900/15");
+        });
+        btn.classList.remove("bg-white", "text-stone-700", "border", "border-amber-900/15");
+        btn.classList.add("bg-maroon", "text-white", "shadow-sm");
+
+        renderProducts(btn.dataset.category);
+      });
+    });
+
+    // Interactive WhatsApp Video Call / Stock Check Form Handler
+    document.getElementById("whatsapp-enquiry-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      const name = document.getElementById("cust-name").value.trim();
+      const village = document.getElementById("cust-village").value.trim();
+      const category = document.getElementById("cust-category").value;
+      const optionType = document.getElementById("cust-type").value;
+      const notes = document.getElementById("cust-notes").value.trim();
+
+      const messageLines = [
+        `Namaste Anita ji (Anita Garments, Nohar),`,
+        `*Name:* ${name}`,
+        `*Village/Area:* ${village}`,
+        `*Looking For:* ${category}`,
+        `*Request:* ${optionType}`,
+        notes ? `*Details:* ${notes}` : null
+      ].filter(Boolean).join("\n");
+
+      const waLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(messageLines)}`;
+      window.open(waLink, "_blank", "noopener,noreferrer");
+    });
+
+    // Mobile navigation toggle
+    const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+    mobileMenuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+
+    document.querySelectorAll(".mobile-nav-link").forEach(link => {
+      link.addEventListener("click", () => {
+        mobileMenu.classList.add("hidden");
+      });
+    });
+
+    // Initialize catalogue and footer year
+    document.getElementById("year").textContent = new Date().getFullYear();
+    renderProducts("all");
+  </script>
+</body>
+</html>
